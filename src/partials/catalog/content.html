@@ -1,0 +1,102 @@
+<section class="content">
+  <div class="content__wrapper">
+    <div class="content__container container">
+      <div class="content__inner">
+        <h1 class="visually-hidden">Страница каталога, сайта SitDownPls</h1>
+        <div class="content__left">
+          <h2 class="content__title content__title--1024 subtitle">Каталог</h2>
+          <div class="content__wrap-choice">
+            <span class="content__filter">Фильтровать по:</span>
+            <form class="content__choice-color choice-form" action="#">
+              <span class="choice-form__option">Цвет</span>
+              <label class="choice-form__label">
+                <input class="choice-form__checkbox" type="checkbox">
+                <span class="choice-form__checkbox-text">Коричневый</span>
+              </label>
+              <label class="choice-form__label">
+                <input class="choice-form__checkbox" type="checkbox">
+                <span class="choice-form__checkbox-text">Черный</span>
+              </label>
+              <label class="choice-form__label">
+                <input class="choice-form__checkbox" type="checkbox">
+                <span class="choice-form__checkbox-text">Синий</span>
+              </label>
+              <label class="choice-form__label">
+                <input class="choice-form__checkbox" type="checkbox">
+                <span class="choice-form__checkbox-text">Белый</span>
+              </label>
+            </form>
+            <form class="content__choice-category choice-form" action="#">
+              <span class="choice-form__option">Категория</span>
+              <label class="choice-form__label">
+                <input class="choice-form__checkbox" type="checkbox">
+                <span class="choice-form__checkbox-text">Диваны</span>
+              </label>
+              <label class="choice-form__label">
+                <input class="choice-form__checkbox" type="checkbox">
+                <span class="choice-form__checkbox-text">Кресла</span>
+              </label>
+            </form>
+            <form class="content__choice-price choice-form" action="#">
+              <span class="choice-form__option choice-form__option--price">Цена</span>
+              <div class="choice-form__wrap">
+                <label class="choice-form__label">
+                  <span class="choice-form__text">от</span>
+                  <input class="choice-form__input" type="number">
+                </label>
+                <label class="choice-form__label">
+                  <span class="choice-form__text">до</span>
+                  <input class="choice-form__input" type="number">
+                </label>
+              </div>
+            </form>
+          </div>
+          <article class="content__banner-card banner-card">
+            <div class="banner-card__wrap-descr">
+              <h2 class="banner-card__title"><strong class="banner-card__title-detailed">Оксфорд 1950</strong> Новая
+                коллекция изысканных кресел</h2>
+              <a class="banner-card__link link" href="#">В каталог
+                <svg width="22.000000" height="22.000000" viewBox="0 0 23 23" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g clip-path="url(#clip13_1495)">
+                    <circle cx="11.000000" cy="11.000000" r="10.000000" stroke-opacity="1.000000"
+                      stroke-width="2.000000"></circle>
+                    <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-opacity="1.000000" stroke-width="2.000000"
+                      stroke-linejoin="round" stroke-linecap="round"></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+        <div class="content__right">
+          <h2 class="content__title subtitle">Каталог</h2>
+          <ul class="content__list rating-list list-reset">
+            @include('../rating-sofas/rating-sofa-1.html')
+            @include('../rating-sofas/rating-sofa-2.html')
+            @include('../rating-sofas/rating-sofa-3.html')
+            @include('../rating-sofas/rating-sofa-4.html')
+            @include('../rating-sofas/rating-sofa-5.html')
+            @include('../rating-sofas/rating-sofa-6.html')
+            @include('../rating-sofas/rating-sofa-7.html')
+            @include('../rating-sofas/rating-sofa-8.html')
+            @include('../rating-sofas/rating-sofa-9.html')
+          </ul>
+          <div class="content__pagination pagination">
+            <ul class="pagination__list list-reset">
+              <li class="pagination__item">
+                <a class="pagination__numb" href="#">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__numb" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__numb" href="#">3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

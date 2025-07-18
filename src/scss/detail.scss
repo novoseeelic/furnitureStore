@@ -1,0 +1,274 @@
+@import "fonts";
+@import "vars";
+@import "settings";
+
+// Header
+.header {
+  padding-bottom: 16px;
+
+  &__content {
+    padding-bottom: 34px;
+  }
+
+  &__search {
+    margin-bottom: 19px;
+  }
+
+  &__breadcrumbs {
+    display: none;
+  }
+
+  &__breadcrumbs--detail {
+    display: block;
+  }
+
+  &__breadcrumbs-link {
+    outline: none;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &__breadcrumbs-link:focus-visible {
+    color: var(--offer-btn);
+  }
+}
+
+// Content
+
+.content {
+  padding-top: 31px;
+  padding-bottom: 41px;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    row-gap: 32px;
+  }
+
+  &__info {
+    grid-column: span 6;
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-column: span 6;
+  }
+}
+
+.info {
+  &__wrap-img {
+    display: block;
+    margin-bottom: 113px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+  }
+
+  &__descr {
+    margin-bottom: 105px;
+  }
+
+  &__description {
+    margin: 0;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 180%;
+  }
+
+  &__description:not(:last-child) {
+    margin-bottom: 7px;
+  }
+
+  &__options--768 {
+    display: none;
+  }
+
+  &__specifications--768 {
+    display: none;
+  }
+}
+
+.options {
+  &__rating {
+    position: relative;
+    margin-bottom: 2px;
+    top: 0;
+    left: 1px;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    font-size: 24px;
+    max-width: 380px;
+    line-height: 130%;
+  }
+
+  &__specific {
+    margin-bottom: 21px;
+    max-width: 380px;
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--color-grey);
+  }
+
+  &__price {
+    margin-bottom: 21px;
+    max-width: 200px;
+    font-size: 36px;
+    line-height: 130%;
+  }
+
+  &__link-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin-bottom: 109px;
+  }
+
+  &__btn {
+    padding: 18px 35px;
+    margin-bottom: 13px;
+    max-width: 300px;
+    font-weight: 600;
+  }
+
+  &__add-basket {
+    outline: none;
+    text-decoration: none;
+    color: var(--offer-btn);
+    max-width: 300px;
+    line-height: 130%;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &__add-basket:focus-visible {
+    outline: 2px solid var(--offer-btn);
+    outline-offset: 2px;
+  }
+
+  &__add-basket:hover {
+    color: var(--btn-hover);
+  }
+
+  &__add-basket:active {
+    color: var(--btn-active);
+  }
+
+  &__specifications {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+}
+
+.specifications {
+  font-size: 14px;
+  line-height: 165%;
+
+  &__table-body {
+    width: 100%;
+  }
+
+  &__item {
+    display: table-row;
+  }
+
+  &__name {
+    width: 52.4%;
+    text-align: left;
+    vertical-align: top;
+    font-weight: 400;
+    line-height: 165%;
+    color: var(--color-grey);
+  }
+
+  &__name-decor {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
+  }
+
+  &__cell {
+    position: relative;
+    z-index: 1;
+    background: var(--color-white);
+  }
+
+  &__name-decor::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 6px;
+    border-bottom: 1px dashed #888;
+  }
+
+  &__prop {
+    width: 50%;
+    text-align: left;
+    text-wrap: nowrap;
+    vertical-align: bottom;
+  }
+}
+
+// Similar
+
+.similar {
+  padding-top: 41px;
+  padding-bottom: 71px;
+  &__subtitle {
+    margin-bottom: 22px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    row-gap: 32px;
+  }
+}
+
+.rating-list {
+  &__item:nth-child(1) .product__subtitle {
+    max-width: 100%;
+  }
+
+  &__item:nth-child(3) .product__subtitle {
+    max-width: 100%;
+  }
+}
+
+.product {
+  &__subtitle {
+    margin-bottom: 22px;
+  }
+
+  &__price {
+    margin-bottom: 25px;
+  }
+}
+
+// Footer
+
+.footer {
+  &__nav {
+    padding-top: 4px;
+  }
+
+  &__copy-wrapper {
+    padding: 4px 0;
+  }
+}
+
+@import "media-detail.scss";

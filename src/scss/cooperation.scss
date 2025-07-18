@@ -1,0 +1,201 @@
+@import "fonts";
+@import "vars";
+@import "settings";
+
+// Header
+
+.header {
+  padding-bottom: 16px;
+
+  &__content {
+    padding-top: 33px;
+    padding-bottom: 32px;
+  }
+
+  &__search {
+    margin-bottom: 22px;
+  }
+
+  &__breadcrumbs--cooperation {
+    display: block;
+  }
+
+  &__breadcrumbs-link {
+    outline: none;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &__breadcrumbs-link:focus-visible {
+    color: var(--offer-btn);
+  }
+}
+
+// Content
+
+.cooperation {
+  padding-top: 16px;
+  padding-bottom: 67px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    grid-column: span 12;
+  }
+
+  &__providers {
+    grid-column: span 8;
+  }
+
+  &__get {
+    grid-column: span 6;
+  }
+
+  &__advantages {
+    grid-column: span 8;
+  }
+
+  &__guarantees {
+    grid-column: span 8;
+  }
+
+  &__term {
+    grid-column: span 6;
+  }
+}
+
+.providers {
+  margin-bottom: 33px;
+
+  &__title {
+    margin-bottom: 32px;
+    font-size: 32px;
+    line-height: 100%;
+  }
+
+  &__subtitle {
+    margin-bottom: 15px;
+  }
+
+  &__descr {
+    line-height: 180%;
+    color: var(--color-grey-shade);
+  }
+}
+
+.get {
+  margin-bottom: 21px;
+
+  &__subtitle {
+    margin-bottom: 13px;
+  }
+
+  &__descr {
+    margin-bottom: 12px;
+    padding-left: 37px;
+    line-height: 150%;
+    color: var(--color-grey-shade);
+  }
+
+  &__descr--first {
+    background-image: url("../img/svg/cooperation-net.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 25px;
+  }
+  &__descr--second {
+    background-image: url("../img/svg/cooperation-case.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 25px;
+  }
+  &__descr--third {
+    background-image: url("../img/svg/cooperation-git.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 25px;
+  }
+}
+
+.advantages {
+  margin-bottom: 32px;
+
+  &__subtitle {
+    margin-bottom: 12px;
+  }
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 13px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: var(--color-crusta);
+  }
+
+  &__descr {
+    line-height: 180%;
+    color: var(--color-grey-shade);
+  }
+
+  &__descr:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.guarantees {
+  margin-bottom: 30px;
+
+  &__subtitle {
+    margin-bottom: 14px;
+  }
+
+  &__list {
+    margin: 0;
+    padding-left: 18px;
+  }
+
+  &__item {
+    padding-left: 8px;
+  }
+
+  &__item::marker {
+    color: var(--color-crusta);
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 13px;
+  }
+
+  &__descr {
+    line-height: 180%;
+    color: var(--color-grey-shade);
+  }
+}
+
+.term {
+  padding-left: 109px;
+  background-image: url("../img/cooperation-term-bg.webp");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 77px;
+  &__descr {
+    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 24px;
+    line-height: 150%;
+  }
+}
+
+.footer {
+  &__wrapper {
+    padding-top: 25px;
+  }
+}
+
+@import "media-cooperation.scss";
