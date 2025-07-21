@@ -12,3 +12,9 @@
 ```shell
     npm run dev
 ```
+
+# Пример отображения интерфейса приложения:
+
+- [Главная страница](./example/main.png)
+- [Каталог](./example/catalog.png)
+- [Побробности о товаре](./example/detail.png)
